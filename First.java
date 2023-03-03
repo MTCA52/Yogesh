@@ -3,9 +3,9 @@ class Batch1
 public static void main(String []args)
 	{
 	Batch2 ob=new Batch2();
-	ob.fun();
+	ob.fun()
 	System.out.println("Welcome Learners");
-	System.out.println("Java is easy");
+	System.out.orintln("Java is easy");
 	}
 }
 class Batch2
