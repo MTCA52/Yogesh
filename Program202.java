@@ -1,9 +1,9 @@
 import java.util.*;
-public class Program207
+public class Program202
 {
-static boolean hi(int n)
+static boolean isEven(int n)
 {
-return((n/2)*2==n);
+return ((n/2)*2==n);
 }
 public static void main(String []args)
 {
@@ -11,7 +11,7 @@ Scanner sc=new Scanner(System.in);
 int n;
 System.out.println("Enter the number:");
 n=sc.nextInt();
-if(hi(n))
+if(isEven(n))
 System.out.println("Even\n");
 else
 System.out.println("Odd\n");
