@@ -1,22 +1,37 @@
 import java.util.Scanner;
 class Number
 {
-static int GCD(int u, int v)
+private int num;
+public void setNum(int num)
 {
-if(u==0) 
-return v;
-return GCD(v% u,v);
+this.num=num;
 }
-static int LCM(int u,int v)
+public int getNum()
 {
-return(u/GCD(u,v))*v;
+return this.num;
 }
+public boolean checkPrime()
+{
+if(this.num==1||this.num==2)return true;
+for(int i=2;i<this.num;i++)
+{
+if(this.num%i==0)return false;
+}
+return true;
+}
+}
+class Test
+{
 public static void main(String []args)
 {
-int u,v;
 Scanner sc=new Scanner(System.in);
-u=sc.nextInt();
-v=sc.nextInt();
-System.out.println("LCM of " + u + " and " +v + " is " + LCM(u,v));
+System.out.println("Enter a number:");
+int temp=sc.nextInt();
+Number ob1=new Number();
+ob1.setNum(temp);
+if(ob1.checkPrime())
+System.out.println("Prime");
+else
+System.out.println("Not Prime");
 }
 }

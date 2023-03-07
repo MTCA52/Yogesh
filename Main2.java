@@ -1,12 +1,12 @@
-import java.util.*;
-class Main2
+class Main2 
 {
-public static void main(String []args)
-{
-int n=5;
-for(int i=1;i<=n;++i)
-{
-System.out.println(i);
-}
-}
+	public static void main(String[] args) 
+	{
+		int [] age = {12,4,5};
+		System.out.println("Using for-each loop : ");
+		for(int a : age)
+		{
+			System.out.println(a);
+		}
+	}
 }

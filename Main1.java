@@ -1,12 +1,12 @@
-import java.util.*;
 class Main1
 {
 public static void main(String []args)
 {
-int n=5;
-for(int i=1;i<=n;++i)
+int [] age = {12,4,5};
+System.out.println("Using for Loop : ");
+for(int i=0;i<age.length;i++)
 {
-System.out.println("Java is fun");
+System.out.println(age[i]);
 }
 }
 }
